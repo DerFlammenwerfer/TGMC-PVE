@@ -9,6 +9,7 @@
 	siemens_coefficient = 0.6
 	w_class = WEIGHT_CLASS_HUGE
 	allowed = list(/obj/item/weapon/gun)//Guns only.
+	hard_armor = list(MELEE = 0, BULLET = 25, LASER = 25, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
 
 
 /obj/item/clothing/suit/armor/mob_can_equip(mob/M, slot, disable_warning)
@@ -92,7 +93,6 @@
 	blood_overlay_type = "armor"
 	flags_armor_protection = CHEST
 	soft_armor = list(MELEE = 30, BULLET = 55, LASER = 0, ENERGY = 0, BOMB = 30, BIO = 0, FIRE = 0, ACID = 15)
-	hard_armor = list(MELEE = 0, BULLET = 20, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 5)
 	siemens_coefficient = 0.7
 	permeability_coefficient = 0.9
 	time_to_unequip = 20
